@@ -28,9 +28,9 @@ Here is how the network traffic flows and tricks network filters using Reality o
 
 ```mermaid
 graph TD
-    A[📱 Client: Phone / PC] -->|🔐 VLESS Encrypted Tunnel| B(🖥️ Hostkey VPS)
-    B -->|🌐 Clean Traffic| C((Public Internet))
-    A -.->|👀 What ISP Sees: Regular HTTPS| D((Legitimate Website e.g., Microsoft))
+    A[📱 Client: Phone or PC] -->|VLESS Encrypted Tunnel| B(Hostkey VPS)
+    B -->|Clean Traffic| C[Public Internet]
+    A -.->|What ISP Sees: Regular HTTPS| D[Legitimate Website]
 ```
 
 ### How it works under the hood:
