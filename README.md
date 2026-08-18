@@ -6,7 +6,6 @@
 🌐 [English](README.md) | [Русский](README.ru.md)
 
 Hello everyone! I’m a 15‑year‑old school student who is interested in computer networks, cybersecurity, and programming. Due to serious limitations and the lack of security in how the internet works, I decided to create this repository, in which I will provide a very detailed account of how to build your own VPN server from scratch.
----
 
 ## 🛠️ Tech Stack & Tools
 * **OS:** Ubuntu Server / Debian
