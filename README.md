@@ -15,6 +15,9 @@ Hello everyone! I’m a 15‑year‑old school student who is interested in comp
 > * 🇷🇺 **[README.ru.md](README.ru.md)** — The same main description, but in Russian.
 > * 📁 **[Folder docs/](docs/)— Super clear guides on how to fully create your own VPN server.
 
+> [!CAUTION]
+> ### 🚨 IMPORTANT!!!
+> If you have any questions, suggestions, or encounter any errors, please be sure to message me privately. I’ll be happy to try to help you!!!
 
 ## 🛠️ Tech Stack & Tools
 * **OS:** Ubuntu Server / Debian
