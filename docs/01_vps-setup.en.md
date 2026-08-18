@@ -4,7 +4,7 @@ In this guide, I have detailed how to rent a server, protect it from basic attac
 
 ---
 
-## 🏠 Step 1. Server purchase and basic protection (Hardening)
+## 🏠 Step 1.Server purchase and basic protection (Hardening)
 
 1. **Hosting selection:** There are a lot of different sites available on the Internet with rentals of various servers WITH PAYMENT IN RUBLES, I chose the simplest and most inexpensive server on the site [Hostkey](https://hostkey.ru ) for 490 rubles/month. For a personal VPN, this is enough.
 
