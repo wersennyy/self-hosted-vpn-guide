@@ -1,7 +1,6 @@
 # 🌐 Собственный VPN-сервер: Мой путь в сети и кибербезопасность в 15 лет
-<p align="center">
-  <img src="IMG_7776 (5).JPEG" alt="wersennyy" width="120" height="120" style="border-radius: 50%;">
-</p>
+
+<img width="1500" height="2000" alt="IMG_7776 (5)" src="https://github.com/user-attachments/assets/d8b6d79d-531b-4fa6-bb66-725b9cec105d" />
 
 [![License: MIT](https://shields.io)](https://opensource.org)
 [![OS: Linux](https://shields.io)](https://linux.org)
