@@ -7,6 +7,15 @@
 
 Hello everyone! I’m a 15‑year‑old school student who is interested in computer networks, cybersecurity, and programming. Due to serious limitations and the lack of security in how the internet works, I decided to create this repository, in which I will provide a very detailed account of how to build your own VPN server from scratch.
 
+> [!NOTE]
+> ### 🗺️ Repository Navigation / Repository Guide
+> This project has been translated into two languages and divided into logical blocks for easy learning:
+>
+> * 🌐 **[README.md](README.md)** — A brief description of the project, technology stack, and goals in English.
+> * 🇷🇺 **[README.ru.md](README.ru.md)** — The same main description, but in Russian.
+> * 📁 **[Folder docs/](docs/)— Super clear guides on how to fully create your own VPN server.
+
+
 ## 🛠️ Tech Stack & Tools
 * **OS:** Ubuntu Server / Debian
 * **Protocol:** VLESS + Reality (via Xray Core)
