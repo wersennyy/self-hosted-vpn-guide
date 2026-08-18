@@ -5,10 +5,7 @@
 
 🌐 [English](README.md) | [Русский](README.ru.md)
 
-Hi there! I am a 15-year-old student passionate about networking, cyber security, and programming. While preparing for my high school exams, I decided to dive deep into how the internet works and build my own infrastructure. 
-
-This repository is a comprehensive guide based on my personal experience of setting up and securing a private VPN server from scratch.
-
+Hello everyone! I’m a 15‑year‑old school student who is interested in computer networks, cybersecurity, and programming. Due to serious limitations and the lack of security in how the internet works, I decided to create this repository, in which I will provide a very detailed account of how to build your own VPN server from scratch.
 ---
 
 ## 🛠️ Tech Stack & Tools
