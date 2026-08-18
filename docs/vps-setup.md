@@ -51,7 +51,7 @@
    ```bash
    bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
    ```
-   > [!IMPORTANT]
+   > [!NOTE]
    > **Это официальный скрипт автоматической установки панели**
 
 2. **Настройка при установке:** 
