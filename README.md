@@ -52,8 +52,20 @@ Here is exactly how I deployed my server, secured it, and set up the next-genera
 
 ### 🏠 Step 1: VPS Procurement & Initial Server Setup
 1. **Hosting Choice:** I ordered a Virtual Private Server (VPS) hosted by **Hostkey** for roughly 490 RUB/month.
-2. **First Security Step:** Immediately after the server was deployed, I changed the default root password to a strong, randomly generated one to prevent brute-force attacks.
-3. **System Update:** I connected to the server via SSH and updated the system packages to ensure all security patches were installed:
+
+> [!NOTE]
+> **There is a very wide selection of hosting services (which may even be cheaper), for example:**
+
+> **1. https://xorek.cloud — a good alternative, slightly cheaper**
+
+> **2. https://play2go.cloud/ — also a good gaming server hosting service**
+
+> **3. https://my.u1host.com — a time‑tested hosting service**
+
+
+
+3. **First Security Step:** Immediately after the server was deployed, I changed the default root password to a strong, randomly generated one to prevent brute-force attacks.
+4. **System Update:** I connected to the server via SSH and updated the system packages to ensure all security patches were installed:
    ```bash
    sudo apt update && sudo apt upgrade -y && reboot
    ```
