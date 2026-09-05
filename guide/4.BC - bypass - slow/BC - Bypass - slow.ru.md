@@ -274,3 +274,6 @@ curl ifconfig.me
 - whitelist-bypass GitHub: https://github.com/kulikov0/whitelist-bypass
 - OlcRTC Manager: https://github.com/Oleglog/Olcrtc_manager
 - WDTT (WireGuard-over-VK-calls): https://github.com/kiper292/wireguard-turn-android
+
+- > [!NOTE]
+> **Продолжение в файле *BC-bypass-fast*** 
