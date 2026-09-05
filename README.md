@@ -13,7 +13,7 @@ Hello everyone! I’m a 15‑year‑old school student who is interested in comp
 >
 > * 🌐 **[README.md](README.md)** — A brief description of the project, technology stack, and goals in English.
 > * 🇷🇺 **[README.ru.md](README.ru.md)** — The same main description, but in Russian.
-> * 📁 **[guide]** — Super clear guides on how to fully create your own VPN server.
+> * 📁 **[guide](guide/)** — Super clear guides on how to fully create your own VPN server.
 
 > [!CAUTION]
 > ### 🚨 IMPORTANT!!!
