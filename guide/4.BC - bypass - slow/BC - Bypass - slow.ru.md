@@ -275,5 +275,5 @@ curl ifconfig.me
 - OlcRTC Manager: https://github.com/Oleglog/Olcrtc_manager
 - WDTT (WireGuard-over-VK-calls): https://github.com/kiper292/wireguard-turn-android
 
-- > [!NOTE]
+> [!NOTE]
 > **Продолжение в файле *BC-bypass-fast*** 
