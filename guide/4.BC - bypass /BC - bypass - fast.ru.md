@@ -10,8 +10,7 @@ graph TD
     
     A -.->|Провайдер видит:<br/>Трафик до белого IP| E[✅ Разрешено]
     
-    style B fill:#4CAF50,color:#fff
-    style C fill:#FF9800,color:#fff
+
 ```
 
 **Простыми словами:**
