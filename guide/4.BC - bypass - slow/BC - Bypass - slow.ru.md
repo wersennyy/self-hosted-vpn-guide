@@ -133,12 +133,12 @@ Open-source инструмент, который создаёт SOCKS5-прок�
 **Шаг 1. Скачать**
 ```bash
 cd ~/Downloads
-wget https://github.com/kulikov0/whitelist-bypass/releases/latest/download/whitelist-bypass-linux-x64.tar.gz
+wget https://github.com/kulikov0/whitelist-bypass/releases/tag/v0.3.8/whitelist-bypass-cli-linux-arm.zip
 ```
 
 **Шаг 2. Распаковать**
 ```bash
-tar -xzf whitelist-bypass-linux-x64.tar.gz
+tar -xzf whitelist-bypass-cli-linux-arm.zip
 cd whitelist-bypass
 ```
 
