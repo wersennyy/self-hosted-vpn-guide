@@ -88,7 +88,6 @@ graph TD
 |-------------|--------|------------|
 | **Cloudflare** | [cloudflare.com](https://cloudflare.com/) | от $10 |
 | **Namecheap** | [namecheap.com](https://namecheap.com/) | от $8 |
-| **GoDaddy** | [godaddy.com](https://godaddy.com/) | от $10 |
 
 ### Какой домен выбрать
 
