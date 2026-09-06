@@ -131,36 +131,32 @@ Open-source инструмент, который создаёт SOCKS5-прок�
 ### Desktop-версия (Electron)
 
 **Шаг 1. Скачать**
-```bash
-cd ~/Downloads
-wget https://github.com/kulikov0/whitelist-bypass/releases/tag/v0.3.8/whitelist-bypass-cli-linux-arm.zip
-```
-
-**Шаг 2. Распаковать**
-```bash
-tar -xzf whitelist-bypass-cli-linux-arm.zip
-cd whitelist-bypass
-```
-
+1. Открой сайт: **https://github.com/kulikov0/whitelist-bypass/releases**
+2. Найди последний релиз (v0.3.8 или новее)
+3. В разделе **Assets** скачай файл для Linux:
+   - `.deb` (для Ubuntu/Debian)
+---
+**Шаг 2. Установить**
+Дважды кликни по файлу → установится автоматически.
+---
 **Шаг 3. Запустить**
-```bash
-./whitelist-bypass
-```
-
+  1. Открой меню приложений
+  2. Найди **WhitelistBypass**
+  3. Запусти
+---
 **Шаг 4. Настроить прокси в системе**
-
 **GNOME (Ubuntu, Fedora)**:
-1. Settings → Network → Network Proxy
-2. Method: Manual
+1. Открой **Settings** → **Network** → **Network Proxy**
+2. Method: **Manual**
 3. HTTP/HTTPS/SOCKS Host: `127.0.0.1`, Port: `1080`
-4. Apply
+4. Нажми **Apply**
 
 **KDE Plasma**:
-1. System Settings → Network → Proxy
-2. Manual Proxy Configuration
+1. Открой **System Settings** → **Network** → **Proxy**
+2. Выбери **Manual Proxy Configuration**
 3. SOCKS Host: `127.0.0.1`, Port: `1080`
-4. Apply
-
+4. Нажми **Apply**
+---
 **Шаг 5. Проверить**
 ```bash
 curl ifconfig.me
