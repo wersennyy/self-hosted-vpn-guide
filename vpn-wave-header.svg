@@ -15,56 +15,68 @@
       <stop offset="0%" stop-color="#071d34" stop-opacity="0"/>
       <stop offset="100%" stop-color="#071d34" stop-opacity="0.9"/>
     </linearGradient>
+
+    <!-- Плавный переход к фону GitHub в нижней части -->
+    <linearGradient id="fadeToGitHub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#0d1117" stop-opacity="0.02"/>
+      <stop offset="66%" stop-color="#0d1117" stop-opacity="0.32"/>
+      <stop offset="84%" stop-color="#0d1117" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
   </defs>
 
-  <!-- Outer background -->
+  <!-- Внешний голубой фон -->
   <rect width="1600" height="900" fill="#159fba"/>
 
-  <!-- Shadow -->
+  <!-- Тень лендинга -->
   <rect x="93" y="100" width="1460" height="750" fill="#07566b" opacity="0.28"/>
 
-  <!-- Main layout -->
+  <!-- Основной макет -->
   <rect x="70" y="75" width="1460" height="750" fill="#ffffff"/>
   <rect x="70" y="75" width="500" height="750" fill="url(#sidebar)"/>
   <rect x="570" y="75" width="960" height="750" fill="url(#sky)"/>
 
-  <!-- Clouds -->
+  <!-- Облака -->
   <path
     d="M570 245 C695 165 770 228 885 168 C990 110 1090 214 1210 150 C1325 86 1430 164 1530 112 L1530 75 L570 75 Z"
     fill="#f4f7f7"
     opacity="0.72"
   />
 
-  <!-- Distant mountains -->
+  <!-- Дальние горы -->
   <path
     d="M570 463 L676 385 L742 415 L821 300 L891 389 L968 283 L1042 385 L1134 250 L1205 375 L1283 296 L1348 383 L1438 265 L1530 365 L1530 568 L570 568 Z"
     fill="#d7e4e8"
   />
 
-  <!-- Mountain shadows -->
+  <!-- Тени на дальних горах -->
   <path
     d="M570 463 L676 385 L742 415 L782 382 L821 300 L891 389 L931 356 L968 283 L1042 385 L1086 351 L1134 250 L1205 375 L1247 343 L1283 296 L1348 383 L1392 339 L1438 265 L1530 365 L1530 575 L570 575 Z"
     fill="#7192a6"
     opacity="0.68"
   />
 
-  <!-- Foreground mountains -->
+  <!-- Передние горы -->
   <path
     d="M570 590 L665 484 L740 526 L828 408 L908 505 L990 413 L1070 526 L1150 448 L1240 545 L1330 413 L1420 520 L1530 447 L1530 825 L570 825 Z"
     fill="#173c5a"
   />
 
-  <!-- Forest -->
+  <!-- Лес -->
   <path
     d="M570 647 C690 590 790 637 904 577 C1000 526 1094 619 1200 559 C1300 504 1405 590 1530 528 L1530 825 L570 825 Z"
     fill="#071e35"
     opacity="0.88"
   />
 
-  <!-- Bottom darkness over the right panel -->
+  <!-- Затемнение нижней части правого фона -->
   <rect x="570" y="75" width="960" height="750" fill="url(#shade)"/>
 
-  <!-- Logo -->
+  <!-- Плавное затемнение всей шапки внизу -->
+  <rect x="70" y="75" width="1460" height="750" fill="url(#fadeToGitHub)"/>
+
+  <!-- Логотип -->
   <text
     x="153"
     y="172"
@@ -74,7 +86,7 @@
     font-weight="700"
   >SELF-HOSTED VPN</text>
 
-  <!-- Top navigation -->
+  <!-- Верхнее меню -->
   <g
     fill="#0a294e"
     font-family="Arial, Helvetica, sans-serif"
@@ -89,10 +101,10 @@
 
   <rect x="875" y="186" width="82" height="3" fill="#0a294e"/>
 
-  <!-- Vertical text line -->
+  <!-- Вертикальная линия -->
   <rect x="170" y="416" width="5" height="296" fill="#ffffff"/>
 
-  <!-- Main title -->
+  <!-- Основной заголовок -->
   <text
     x="231"
     y="510"
@@ -103,7 +115,7 @@
     letter-spacing="-4"
   >SELF-HOSTED</text>
 
-  <!-- Outline title -->
+  <!-- Контурный заголовок -->
   <text
     x="231"
     y="610"
@@ -116,7 +128,7 @@
     letter-spacing="-4"
   >VPN</text>
 
-  <!-- Description -->
+  <!-- Описание -->
   <text
     x="231"
     y="654"
@@ -135,7 +147,7 @@
     font-style="italic"
   >Linux, VLESS + Reality, Xray Core and 3x-ui.</text>
 
-  <!-- Button -->
+  <!-- Кнопка -->
   <rect x="231" y="716" width="144" height="38" fill="#159fba"/>
   <text
     x="303"
