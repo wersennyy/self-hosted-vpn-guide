@@ -1,6 +1,6 @@
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/wersennyy/self-hosted-vpn-guide/.../resources/vpn-wave-header.svg"
+    src="https://raw.githubusercontent.com/wersennyy/self-hosted-vpn-guide/da223f8df9aa0de625c2eb8acf014bd4caab5994/resources/vpn-wave-header.svg"
     width="100%"
     alt="Self-Hosted VPN"
   />
