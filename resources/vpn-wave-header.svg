@@ -60,7 +60,6 @@
 
   <rect x="500" width="960" height="750" fill="url(#shade)"/>
 
-  <!-- Вот сам плавный переход к нижнему краю -->
   <rect width="1460" height="750" fill="url(#fadeToGitHub)"/>
 
   <text
@@ -71,17 +70,6 @@
     font-size="26"
     font-weight="700"
   >SELF-HOSTED VPN</text>
-
-  <g
-    fill="#0a294e"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="15"
-    font-weight="700"
-  >
-    <text x="900" y="97">OVERVIEW</text>
-    <text x="1058" y="97">GUIDES</text>
-    <text x="1175" y="97">GITHUB</text>
-  </g>
 
   <rect x="895" y="111" width="82" height="3" fill="#0a294e"/>
 
@@ -125,7 +113,7 @@
     font-family="Georgia, serif"
     font-size="18"
     font-style="italic"
-  >Linux, VLESS + Reality, Xray Core and 3x-ui.</text>
+  > VLESS + Reality, Xray Core and BC.</text>
 
   <rect x="161" y="641" width="144" height="38" fill="#159fba"/>
 
