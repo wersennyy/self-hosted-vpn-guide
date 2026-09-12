@@ -1,10 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1460 750">
+  <defs>
+    <linearGradient id="sidebar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#102943"/>
+      <stop offset="100%" stop-color="#0a2038"/>
+    </linearGradient>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6edef"/>
+      <stop offset="42%" stop-color="#91aabb"/>
+      <stop offset="100%" stop-color="#0a2843"/>
+    </linearGradient>
+
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071d34" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#071d34" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="fadeToGitHub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#0d1117" stop-opacity="0.02"/>
+      <stop offset="66%" stop-color="#0d1117" stop-opacity="0.32"/>
+      <stop offset="84%" stop-color="#0d1117" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
   <rect width="1460" height="750" fill="#0d1117"/>
 
-  <rect width="500" height="750" fill="#102943"/>
-  <rect x="500" width="960" height="750" fill="#91aabb"/>
-
-  <rect x="500" y="0" width="960" height="180" fill="#e6edef"/>
+  <rect width="500" height="750" fill="url(#sidebar)"/>
+  <rect x="500" width="960" height="750" fill="url(#sky)"/>
 
   <path
     d="M500 170 C625 90 700 153 815 93 C920 35 1020 139 1140 75 C1260 11 1360 89 1460 40 L1460 0 L500 0 Z"
@@ -34,46 +58,57 @@
     opacity="0.88"
   />
 
-  <rect x="500" y="440" width="960" height="310" fill="#071d34" opacity="0.55"/>
-  <rect x="0" y="620" width="1460" height="130" fill="#0d1117" opacity="0.85"/>
+  <rect x="500" width="960" height="750" fill="url(#shade)"/>
+  <rect width="1460" height="750" fill="url(#fadeToGitHub)"/>
 
-  <text
-    x="83"
-    y="97"
-    fill="#ffffff"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="26"
-    font-weight="700"
-  >SELF-HOSTED VPN</text>
+  <!-- Логотип: ведёт на русский README -->
+  <a href="https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/README.ru.md">
+    <text
+      x="83"
+      y="97"
+      fill="#ffffff"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="26"
+      font-weight="700"
+    >SELF-HOSTED VPN</text>
+  </a>
 
-  <text
-    x="900"
-    y="97"
-    fill="#0a294e"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="15"
-    font-weight="700"
-  >OVERVIEW</text>
+  <!-- OVERVIEW: русский README -->
+  <a href="https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/README.ru.md">
+    <text
+      x="900"
+      y="97"
+      fill="#0a294e"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="15"
+      font-weight="700"
+    >OVERVIEW</text>
+    <rect x="895" y="111" width="82" height="3" fill="#0a294e"/>
+  </a>
 
-  <text
-    x="1058"
-    y="97"
-    fill="#0a294e"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="15"
-    font-weight="700"
-  >GUIDES</text>
+  <!-- GUIDES: папка с гайдами -->
+  <a href="https://github.com/wersennyy/self-hosted-vpn-guide/tree/main/guide">
+    <text
+      x="1058"
+      y="97"
+      fill="#0a294e"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="15"
+      font-weight="700"
+    >GUIDES</text>
+  </a>
 
-  <text
-    x="1175"
-    y="97"
-    fill="#0a294e"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="15"
-    font-weight="700"
-  >GITHUB</text>
-
-  <rect x="895" y="111" width="82" height="3" fill="#0a294e"/>
+  <!-- GITHUB: профиль автора -->
+  <a href="https://github.com/wersennyy">
+    <text
+      x="1175"
+      y="97"
+      fill="#0a294e"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="15"
+      font-weight="700"
+    >GITHUB</text>
+  </a>
 
   <rect x="100" y="341" width="5" height="296" fill="#ffffff"/>
 
@@ -117,15 +152,17 @@
     font-style="italic"
   >Linux, VLESS + Reality, Xray Core and 3x-ui.</text>
 
-  <rect x="161" y="641" width="144" height="38" fill="#159fba"/>
-
-  <text
-    x="233"
-    y="666"
-    text-anchor="middle"
-    fill="#08213b"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="14"
-    font-weight="700"
-  >READ GUIDE</text>
+  <!-- READ GUIDE: папка guide -->
+  <a href="https://github.com/wersennyy/self-hosted-vpn-guide/tree/main/guide">
+    <rect x="161" y="641" width="144" height="38" fill="#159fba"/>
+    <text
+      x="233"
+      y="666"
+      text-anchor="middle"
+      fill="#08213b"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="14"
+      font-weight="700"
+    >READ GUIDE</text>
+  </a>
 </svg>
