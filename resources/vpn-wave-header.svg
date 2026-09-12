@@ -1,4 +1,134 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1460 750">
+  <rect width="1460" height="750" fill="#0d1117"/>
+
+  <rect width="500" height="750" fill="#102943"/>
+  <rect x="500" width="960" height="750" fill="#91aabb"/>
+
+  <rect x="500" y="0" width="960" height="180" fill="#e6edef"/>
+
+  <path
+    d="M500 170 C625 90 700 153 815 93 C920 35 1020 139 1140 75 C1260 11 1360 89 1460 40 L1460 0 L500 0 Z"
+    fill="#f4f7f7"
+    opacity="0.72"
+  />
+
+  <path
+    d="M500 388 L606 310 L672 340 L751 225 L821 314 L898 208 L972 310 L1064 175 L1135 300 L1213 221 L1278 308 L1368 190 L1460 290 L1460 495 L500 495 Z"
+    fill="#d7e4e8"
+  />
+
+  <path
+    d="M500 388 L606 310 L672 340 L712 307 L751 225 L821 314 L861 281 L898 208 L972 310 L1016 276 L1064 175 L1135 300 L1177 268 L1213 221 L1278 308 L1322 264 L1368 190 L1460 290 L1460 502 L500 502 Z"
+    fill="#7192a6"
+    opacity="0.68"
+  />
+
+  <path
+    d="M500 515 L595 409 L670 451 L758 333 L838 430 L920 338 L1000 451 L1080 373 L1170 470 L1260 338 L1350 445 L1460 372 L1460 750 L500 750 Z"
+    fill="#173c5a"
+  />
+
+  <path
+    d="M500 572 C620 515 720 562 834 502 C930 451 1024 544 1130 484 C1230 429 1335 515 1460 453 L1460 750 L500 750 Z"
+    fill="#071e35"
+    opacity="0.88"
+  />
+
+  <rect x="500" y="440" width="960" height="310" fill="#071d34" opacity="0.55"/>
+  <rect x="0" y="620" width="1460" height="130" fill="#0d1117" opacity="0.85"/>
+
+  <text
+    x="83"
+    y="97"
+    fill="#ffffff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="26"
+    font-weight="700"
+  >SELF-HOSTED VPN</text>
+
+  <text
+    x="900"
+    y="97"
+    fill="#0a294e"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="15"
+    font-weight="700"
+  >OVERVIEW</text>
+
+  <text
+    x="1058"
+    y="97"
+    fill="#0a294e"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="15"
+    font-weight="700"
+  >GUIDES</text>
+
+  <text
+    x="1175"
+    y="97"
+    fill="#0a294e"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="15"
+    font-weight="700"
+  >GITHUB</text>
+
+  <rect x="895" y="111" width="82" height="3" fill="#0a294e"/>
+
+  <rect x="100" y="341" width="5" height="296" fill="#ffffff"/>
+
+  <text
+    x="161"
+    y="435"
+    fill="#ffffff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="101"
+    font-weight="800"
+    letter-spacing="-4"
+  >SELF-HOSTED</text>
+
+  <text
+    x="161"
+    y="535"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="1.5"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="101"
+    font-weight="800"
+    letter-spacing="-4"
+  >VPN</text>
+
+  <text
+    x="161"
+    y="579"
+    fill="#ffffff"
+    font-family="Georgia, serif"
+    font-size="18"
+    font-style="italic"
+  >Build your own private infrastructure.</text>
+
+  <text
+    x="161"
+    y="605"
+    fill="#ffffff"
+    font-family="Georgia, serif"
+    font-size="18"
+    font-style="italic"
+  >Linux, VLESS + Reality, Xray Core and 3x-ui.</text>
+
+  <rect x="161" y="641" width="144" height="38" fill="#159fba"/>
+
+  <text
+    x="233"
+    y="666"
+    text-anchor="middle"
+    fill="#08213b"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    font-weight="700"
+  >READ GUIDE</text>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1460 750">
   <defs>
     <linearGradient id="sidebar" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#102943"/>
