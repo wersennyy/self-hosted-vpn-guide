@@ -1,11 +1,10 @@
 <div align="center">
   <img
-    src="./resources/vpn-wave-header.svg"
+    src="https://raw.githubusercontent.com/wersennyy/self-hosted-vpn-guide/main/resources/vpn-wave-header.svg?v=2"
     width="100%"
     alt="Self-Hosted VPN"
   />
 </div>
-
 # 🌐 Собственный VPN-сервер: Мой путь в сети и кибербезопасность в 15 лет
 
 [![License: MIT](https://shields.io)](https://opensource.org)
