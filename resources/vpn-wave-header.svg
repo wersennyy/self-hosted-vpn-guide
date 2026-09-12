@@ -62,16 +62,6 @@
 
   <rect width="1460" height="750" fill="url(#fadeToGitHub)"/>
 
-  <text
-    x="83"
-    y="97"
-    fill="#ffffff"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="30"
-    font-weight="700"
-  >Wersennyy</text>
-
-
   <rect x="100" y="341" width="5" height="296" fill="#ffffff"/>
 
   <text
