@@ -59,56 +59,31 @@
   />
 
   <rect x="500" width="960" height="750" fill="url(#shade)"/>
+
+  <!-- Вот сам плавный переход к нижнему краю -->
   <rect width="1460" height="750" fill="url(#fadeToGitHub)"/>
 
-  <!-- Логотип: ведёт на русский README -->
-  <a href="https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/README.ru.md">
-    <text
-      x="83"
-      y="97"
-      fill="#ffffff"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="26"
-      font-weight="700"
-    >SELF-HOSTED VPN</text>
-  </a>
+  <text
+    x="83"
+    y="97"
+    fill="#ffffff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="26"
+    font-weight="700"
+  >SELF-HOSTED VPN</text>
 
-  <!-- OVERVIEW: русский README -->
-  <a href="https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/README.ru.md">
-    <text
-      x="900"
-      y="97"
-      fill="#0a294e"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="15"
-      font-weight="700"
-    >OVERVIEW</text>
-    <rect x="895" y="111" width="82" height="3" fill="#0a294e"/>
-  </a>
+  <g
+    fill="#0a294e"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="15"
+    font-weight="700"
+  >
+    <text x="900" y="97">OVERVIEW</text>
+    <text x="1058" y="97">GUIDES</text>
+    <text x="1175" y="97">GITHUB</text>
+  </g>
 
-  <!-- GUIDES: папка с гайдами -->
-  <a href="https://github.com/wersennyy/self-hosted-vpn-guide/tree/main/guide">
-    <text
-      x="1058"
-      y="97"
-      fill="#0a294e"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="15"
-      font-weight="700"
-    >GUIDES</text>
-  </a>
-
-  <!-- GITHUB: профиль автора -->
-  <a href="https://github.com/wersennyy">
-    <text
-      x="1175"
-      y="97"
-      fill="#0a294e"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="15"
-      font-weight="700"
-    >GITHUB</text>
-  </a>
+  <rect x="895" y="111" width="82" height="3" fill="#0a294e"/>
 
   <rect x="100" y="341" width="5" height="296" fill="#ffffff"/>
 
@@ -152,17 +127,15 @@
     font-style="italic"
   >Linux, VLESS + Reality, Xray Core and 3x-ui.</text>
 
-  <!-- READ GUIDE: папка guide -->
-  <a href="https://github.com/wersennyy/self-hosted-vpn-guide/tree/main/guide">
-    <rect x="161" y="641" width="144" height="38" fill="#159fba"/>
-    <text
-      x="233"
-      y="666"
-      text-anchor="middle"
-      fill="#08213b"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="14"
-      font-weight="700"
-    >READ GUIDE</text>
-  </a>
+  <rect x="161" y="641" width="144" height="38" fill="#159fba"/>
+
+  <text
+    x="233"
+    y="666"
+    text-anchor="middle"
+    fill="#08213b"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    font-weight="700"
+  >READ GUIDE</text>
 </svg>
