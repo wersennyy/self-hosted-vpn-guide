@@ -8,7 +8,7 @@
 
 <div align="center">
   <img
-    src="./resources/-section.svg"
+    src="./resources/intro-section.svg"
     width="100%"
     alt="О проекте"
   />
