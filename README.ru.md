@@ -7,14 +7,6 @@
 </div>
 
 <div align="center">
-  <img
-    src="./resources/intro-section.svg"
-    width="100%"
-    alt="О проекте"
-  />
-</div>
-
-<div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-0d1117?style=flat-square&labelColor=0d1117)](LICENSE)
 [![OS: Linux](https://img.shields.io/badge/OS-Linux-0d1117?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117)](https://www.linux.org/)
