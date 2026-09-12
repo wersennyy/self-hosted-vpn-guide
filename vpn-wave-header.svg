@@ -1,156 +1,149 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  viewBox="0 0 1600 900"
-  role="img"
-  aria-labelledby="title description"
->
-  <title id="title">Self-Hosted VPN</title>
-  <desc id="description">
-    Self-Hosted VPN — Linux, Network Security, VLESS plus Reality
-  </desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
   <defs>
-    <!-- Основной фон правой части -->
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#d8e1e4"/>
-      <stop offset="35%" stop-color="#9fb1bd"/>
-      <stop offset="70%" stop-color="#31516b"/>
-      <stop offset="100%" stop-color="#0b233d"/>
-    </linearGradient>
-
-    <!-- Затемнение у нижней части фона -->
-    <linearGradient id="photoOverlay" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#061a32" stop-opacity="0"/>
-      <stop offset="47%" stop-color="#09213d" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#071b32" stop-opacity="0.93"/>
-    </linearGradient>
-
-    <!-- Лёгкая дымка поверх пейзажа -->
-    <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#eef5f7" stop-opacity="0.55"/>
-      <stop offset="65%" stop-color="#edf4f6" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#edf4f6" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Левая панель -->
     <linearGradient id="sidebar" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#102943"/>
-      <stop offset="100%" stop-color="#0b213a"/>
+      <stop offset="100%" stop-color="#0a2038"/>
     </linearGradient>
 
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow
-        dx="18"
-        dy="24"
-        stdDeviation="22"
-        flood-color="#003046"
-        flood-opacity="0.42"
-      />
-    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6edef"/>
+      <stop offset="42%" stop-color="#91aabb"/>
+      <stop offset="100%" stop-color="#0a2843"/>
+    </linearGradient>
 
-    <clipPath id="rightSide">
-      <rect x="540" y="0" width="1060" height="900" />
-    </clipPath>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071d34" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#071d34" stop-opacity="0.9"/>
+    </linearGradient>
   </defs>
 
-  <!-- Внешний бирюзовый фон как у референса -->
-  <rect width="1600" height="900" fill="#169fb9"/>
+  <!-- Outer background -->
+  <rect width="1600" height="900" fill="#159fba"/>
 
-  <!-- Центральный лендинг-блок с тенью -->
-  <g transform="translate(70 75)" filter="url(#shadow)">
-    <rect width="1460" height="750" fill="#ffffff"/>
+  <!-- Shadow -->
+  <rect x="93" y="100" width="1460" height="750" fill="#07566b" opacity="0.28"/>
 
-    <!-- Левая тёмная панель -->
-    <rect width="500" height="750" fill="url(#sidebar)"/>
+  <!-- Main layout -->
+  <rect x="70" y="75" width="1460" height="750" fill="#ffffff"/>
+  <rect x="70" y="75" width="500" height="750" fill="url(#sidebar)"/>
+  <rect x="570" y="75" width="960" height="750" fill="url(#sky)"/>
 
-    <!-- Правая часть -->
-    <g transform="translate(500 0)">
-      <rect width="960" height="750" fill="url(#sky)"/>
+  <!-- Clouds -->
+  <path
+    d="M570 245 C695 165 770 228 885 168 C990 110 1090 214 1210 150 C1325 86 1430 164 1530 112 L1530 75 L570 75 Z"
+    fill="#f4f7f7"
+    opacity="0.72"
+  />
 
-      <!-- Стилизованный горный фон -->
-      <g clip-path="url(#rightSide)" transform="translate(-500 0)">
-        <!-- Облака -->
-        <path
-          d="M480 170
-             C620 115 700 165 790 130
-             C910 85 1025 140 1110 112
-             C1240 67 1370 130 1500 75
-             L1600 0 L480 0 Z"
-          fill="#f1f4f4"
-          opacity="0.76"
-        />
-        <path
-          d="M500 225
-             C630 176 720 232 835 184
-             C935 142 1060 224 1170 170
-             C1270 123 1390 181 1540 131
-             L1600 0 L500 0 Z"
-          fill="#dbe7ec"
-          opacity="0.58"
-        />
+  <!-- Distant mountains -->
+  <path
+    d="M570 463 L676 385 L742 415 L821 300 L891 389 L968 283 L1042 385 L1134 250 L1205 375 L1283 296 L1348 383 L1438 265 L1530 365 L1530 568 L570 568 Z"
+    fill="#d7e4e8"
+  />
 
-        <!-- Дальний снежный хребет -->
-        <path
-          d="M500 380
-             L610 322 L665 343 L742 249 L806 318
-             L885 228 L950 309 L1040 193 L1105 294
-             L1186 222 L1242 296 L1325 202 L1402 286
-             L1490 230 L1600 304
-             L1600 512 L500 512 Z"
-          fill="#d9e6e9"
-          opacity="0.94"
-        />
+  <!-- Mountain shadows -->
+  <path
+    d="M570 463 L676 385 L742 415 L782 382 L821 300 L891 389 L931 356 L968 283 L1042 385 L1086 351 L1134 250 L1205 375 L1247 343 L1283 296 L1348 383 L1392 339 L1438 265 L1530 365 L1530 575 L570 575 Z"
+    fill="#7192a6"
+    opacity="0.68"
+  />
 
-        <!-- Тени и снег на дальнем хребте -->
-        <path
-          d="M742 249 L806 318 L855 283 L885 228 L950 309
-             L1004 270 L1040 193 L1105 294 L1151 269
-             L1186 222 L1242 296 L1282 269 L1325 202
-             L1402 286 L1452 256 L1490 230 L1600 304
-             L1600 420 L500 420 L610 322 L665 343 Z"
-          fill="#7897aa"
-          opacity="0.55"
-        />
+  <!-- Foreground mountains -->
+  <path
+    d="M570 590 L665 484 L740 526 L828 408 L908 505 L990 413 L1070 526 L1150 448 L1240 545 L1330 413 L1420 520 L1530 447 L1530 825 L570 825 Z"
+    fill="#173c5a"
+  />
 
-        <!-- Передний горный массив -->
-        <path
-          d="M500 512
-             L584 424 L646 451 L728 360 L798 434
-             L866 347 L950 450 L1031 387 L1095 485
-             L1182 405 L1260 493 L1350 376 L1430 474
-             L1514 405 L1600 460
-             L1600 750 L500 750 Z"
-          fill="#173b59"
-        />
+  <!-- Forest -->
+  <path
+    d="M570 647 C690 590 790 637 904 577 C1000 526 1094 619 1200 559 C1300 504 1405 590 1530 528 L1530 825 L570 825 Z"
+    fill="#071e35"
+    opacity="0.88"
+  />
 
-        <!-- Тени передних гор -->
-        <path
-          d="M500 570
-             L584 424 L646 451 L686 419 L728 360
-             L798 434 L835 396 L866 347 L950 450
-             L995 421 L1031 387 L1095 485 L1140 456
-             L1182 405 L1260 493 L1303 443 L1350 376
-             L1430 474 L1470 439 L1514 405 L1600 460
-             L1600 750 L500 750 Z"
-          fill="#08243f"
-          opacity="0.72"
-        />
+  <!-- Bottom darkness over the right panel -->
+  <rect x="570" y="75" width="960" height="750" fill="url(#shade)"/>
 
-        <!-- Сосновый лес -->
-        <path
-          d="M500 600
-             C585 562 660 594 746 554
-             C825 518 900 585 988 548
-             C1082 510 1155 580 1238 535
-             C1325 490 1420 553 1600 494
-             L1600 750 L500 750 Z"
-          fill="#071c32"
-          opacity="0.84"
-        />
+  <!-- Logo -->
+  <text
+    x="153"
+    y="172"
+    fill="#ffffff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="26"
+    font-weight="700"
+  >SELF-HOSTED VPN</text>
 
-        <!-- Дымка -->
-        <rect x="500" y="0" width="1100" height="750" fill="url(#mist)"/>
-      </g>
+  <!-- Top navigation -->
+  <g
+    fill="#0a294e"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="15"
+    font-weight="700"
+  >
+    <text x="880" y="172">OVERVIEW</text>
+    <text x="1036" y="172">GUIDES</text>
+    <text x="1151" y="172">STACK</text>
+    <text x="1264" y="172">GITHUB</text>
+  </g>
 
-      <!-- Нижнее затемнение -->
+  <rect x="875" y="186" width="82" height="3" fill="#0a294e"/>
+
+  <!-- Vertical text line -->
+  <rect x="170" y="416" width="5" height="296" fill="#ffffff"/>
+
+  <!-- Main title -->
+  <text
+    x="231"
+    y="510"
+    fill="#ffffff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="101"
+    font-weight="800"
+    letter-spacing="-4"
+  >SELF-HOSTED</text>
+
+  <!-- Outline title -->
+  <text
+    x="231"
+    y="610"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="1.5"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="101"
+    font-weight="800"
+    letter-spacing="-4"
+  >VPN</text>
+
+  <!-- Description -->
+  <text
+    x="231"
+    y="654"
+    fill="#ffffff"
+    font-family="Georgia, serif"
+    font-size="18"
+    font-style="italic"
+  >Build your own private infrastructure.</text>
+
+  <text
+    x="231"
+    y="680"
+    fill="#ffffff"
+    font-family="Georgia, serif"
+    font-size="18"
+    font-style="italic"
+  >Linux, VLESS + Reality, Xray Core and 3x-ui.</text>
+
+  <!-- Button -->
+  <rect x="231" y="716" width="144" height="38" fill="#159fba"/>
+  <text
+    x="303"
+    y="741"
+    text-anchor="middle"
+    fill="#08213b"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    font-weight="700"
+  >READ GUIDE</text>
+</svg>
