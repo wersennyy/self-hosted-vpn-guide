@@ -1,6 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 400" preserveAspectRatio="none">
-  <rect width="1920" height="400" fill="#0a0a0a"/>
-  <path d="M0,300 C320,280 480,350 640,320 C800,290 960,380 1120,340 C1280,300 1440,360 1600,330 C1760,300 1840,320 1920,310 L1920,400 L0,400 Z" fill="#00ff88" opacity="0.3"/>
-  <path d="M0,320 C320,300 480,370 640,340 C800,310 960,400 1120,360 C1280,320 1440,380 1600,350 C1760,320 1840,340 1920,330 L1920,400 L0,400 Z" fill="#00ff88" opacity="0.5"/>
-  <path d="M0,340 C320,320 480,390 640,360 C800,330 960,420 1120,380 C1280,340 1440,400 1600,370 C1760,340 1840,360 1920,350 L1920,400 L0,400 Z" fill="#00ff88"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2a2a2a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1920" height="600" fill="url(#bg)"/>
+  <rect width="1920" height="600" fill="url(#grid)" opacity="0.4"/>
+  
+  <line x1="0" y1="300" x2="1920" y2="300" stroke="#333333" stroke-width="1" opacity="0.6"/>
+  <line x1="960" y1="0" x2="960" y2="600" stroke="#333333" stroke-width="1" opacity="0.6"/>
+  
+  <circle cx="960" cy="300" r="150" fill="none" stroke="#404040" stroke-width="2" opacity="0.3"/>
+  <circle cx="960" cy="300" r="100" fill="none" stroke="#404040" stroke-width="2" opacity="0.5"/>
+  <circle cx="960" cy="300" r="50" fill="none" stroke="#505050" stroke-width="2" opacity="0.7"/>
 </svg>
