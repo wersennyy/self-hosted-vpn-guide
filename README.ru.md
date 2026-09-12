@@ -161,7 +161,7 @@ flowchart LR
 sudo apt update && sudo apt upgrade -y
 sudo reboot
 ```
-
+<!--
 ### Шаг 2. Установка и настройка 3x-ui
 
 1. **Установка.** Я установил панель 3x-ui через терминал.
