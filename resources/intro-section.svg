@@ -1,0 +1,101 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Градиент в стиле шапки -->
+    <linearGradient id="introGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Свечение -->
+    <filter id="introGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Фоновая сетка -->
+    <pattern id="introGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Фон -->
+  <rect x="0" y="0" width="1200" height="560" fill="#0d1117"/>
+
+  <!-- Сетка -->
+  <rect x="0" y="0" width="1200" height="560" fill="url(#introGrid)"/>
+
+  <!-- Декоративные линии -->
+  <g stroke="url(#introGrad)" stroke-width="1.2" opacity="0.25">
+    <path d="M 0 120 L 1200 120"/>
+    <path d="M 0 220 L 1200 220"/>
+    <path d="M 0 320 L 1200 320"/>
+    <path d="M 0 420 L 1200 420"/>
+    <path d="M 0 520 L 1200 520"/>
+  </g>
+
+  <!-- Анимированные «волны» / узлы -->
+  <g fill="url(#introGrad)" opacity="0.18" filter="url(#introGlow)">
+    <circle cx="220" cy="280" r="45">
+      <animate attributeName="r" values="35;55;35" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.25;0.12" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="280" r="55">
+      <animate attributeName="r" values="45;65;45" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.22;0.1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="620" cy="280" r="48">
+      <animate attributeName="r" values="38;58;38" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.23;0.1" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="280" r="40">
+      <animate attributeName="r" values="30;50;30" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.24;0.12" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Соединительные линии -->
+  <g stroke="url(#introGrad)" stroke-width="1.2" opacity="0.35" fill="none">
+    <path d="M 220 280 L 420 280"/>
+    <path d="M 420 280 L 620 280"/>
+    <path d="M 620 280 L 820 280"/>
+  </g>
+
+  <!-- Навигация: English · Русский · Гайды -->
+  <text x="600" y="80" font-family="Segoe UI, Roboto, Arial" font-size="16" fill="#60a5fa" text-anchor="middle" opacity="0.95">
+    English · Русский · Гайды
+  </text>
+
+  <!-- Заголовок -->
+  <text x="600" y="150" font-family="Segoe UI, Roboto, Arial" font-size="32" fill="#e5e7eb" text-anchor="middle" opacity="0.95">
+    Собственный VPN-сервер: мой путь в сети
+  </text>
+
+  <text x="600" y="190" font-family="Segoe UI, Roboto, Arial" font-size="32" fill="#e5e7eb" text-anchor="middle" opacity="0.95">
+    и кибербезопасность в 15 лет
+  </text>
+
+  <!-- Описание, строка 1 -->
+  <text x="600" y="250" font-family="Segoe UI, Roboto, Arial" font-size="15" fill="#9ca3af" text-anchor="middle" opacity="0.85">
+    Привет! Я 15-летний школьник, который увлекается компьютерными сетями, кибербезопасностью и программированием.
+  </text>
+
+  <text x="600" y="280" font-family="Segoe UI, Roboto, Arial" font-size="15" fill="#9ca3af" text-anchor="middle" opacity="0.85">
+    Из-за ограничений, нестабильности и рисков при работе в интернете я решил собрать собственную инфраструктуру
+  </text>
+
+  <text x="600" y="310" font-family="Segoe UI, Roboto, Arial" font-size="15" fill="#9ca3af" text-anchor="middle" opacity="0.85">
+    и подробно задокументировать весь путь в этом репозитории.
+  </text>
+
+  <!-- Описание, строка 2 -->
+  <text x="600" y="360" font-family="Segoe UI, Roboto, Arial" font-size="15" fill="#9ca3af" text-anchor="middle" opacity="0.85">
+    Здесь я рассказываю, как развернуть личный VPN-сервер с нуля: от выбора VPS и базовой защиты Linux
+  </text>
+
+  <text x="600" y="390" font-family="Segoe UI, Roboto, Arial" font-size="15" fill="#9ca3af" text-anchor="middle" opacity="0.85">
+    до настройки VLESS + Reality, управления клиентами и подключения устройств.
+  </text>
+</svg>
