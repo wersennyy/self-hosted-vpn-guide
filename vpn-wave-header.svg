@@ -7,6 +7,11 @@
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2a2a2a" stroke-width="0.5"/>
     </pattern>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
   </defs>
   
   <rect width="1920" height="600" fill="url(#bg)"/>
@@ -15,7 +20,10 @@
   <line x1="0" y1="300" x2="1920" y2="300" stroke="#333333" stroke-width="1" opacity="0.6"/>
   <line x1="960" y1="0" x2="960" y2="600" stroke="#333333" stroke-width="1" opacity="0.6"/>
   
-  <circle cx="960" cy="300" r="150" fill="none" stroke="#404040" stroke-width="2" opacity="0.3"/>
-  <circle cx="960" cy="300" r="100" fill="none" stroke="#404040" stroke-width="2" opacity="0.5"/>
-  <circle cx="960" cy="300" r="50" fill="none" stroke="#505050" stroke-width="2" opacity="0.7"/>
+  <circle cx="960" cy="300" r="200" fill="none" stroke="#404040" stroke-width="2" opacity="0.3"/>
+  <circle cx="960" cy="300" r="150" fill="none" stroke="#404040" stroke-width="2" opacity="0.5"/>
+  <circle cx="960" cy="300" r="100" fill="none" stroke="#505050" stroke-width="2" opacity="0.7"/>
+  
+  <text x="50%" y="45%" text-anchor="middle" fill="url(#textGradient)" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" letter-spacing="8">SELF-HOSTED</text>
+  <text x="50%" y="55%" text-anchor="middle" fill="url(#textGradient)" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" letter-spacing="12">VPN</text>
 </svg>
