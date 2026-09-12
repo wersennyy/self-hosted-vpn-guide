@@ -1,29 +1,156 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="none">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 1600 900"
+  role="img"
+  aria-labelledby="title description"
+>
+  <title id="title">Self-Hosted VPN</title>
+  <desc id="description">
+    Self-Hosted VPN — Linux, Network Security, VLESS plus Reality
+  </desc>
+
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    <!-- Основной фон правой части -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8e1e4"/>
+      <stop offset="35%" stop-color="#9fb1bd"/>
+      <stop offset="70%" stop-color="#31516b"/>
+      <stop offset="100%" stop-color="#0b233d"/>
     </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2a2a2a" stroke-width="0.5"/>
-    </pattern>
-    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#808080;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+
+    <!-- Затемнение у нижней части фона -->
+    <linearGradient id="photoOverlay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#061a32" stop-opacity="0"/>
+      <stop offset="47%" stop-color="#09213d" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#071b32" stop-opacity="0.93"/>
     </linearGradient>
+
+    <!-- Лёгкая дымка поверх пейзажа -->
+    <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#eef5f7" stop-opacity="0.55"/>
+      <stop offset="65%" stop-color="#edf4f6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#edf4f6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Левая панель -->
+    <linearGradient id="sidebar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#102943"/>
+      <stop offset="100%" stop-color="#0b213a"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow
+        dx="18"
+        dy="24"
+        stdDeviation="22"
+        flood-color="#003046"
+        flood-opacity="0.42"
+      />
+    </filter>
+
+    <clipPath id="rightSide">
+      <rect x="540" y="0" width="1060" height="900" />
+    </clipPath>
   </defs>
-  
-  <rect width="1920" height="600" fill="url(#bg)"/>
-  <rect width="1920" height="600" fill="url(#grid)" opacity="0.4"/>
-  
-  <line x1="0" y1="300" x2="1920" y2="300" stroke="#333333" stroke-width="1" opacity="0.6"/>
-  <line x1="960" y1="0" x2="960" y2="600" stroke="#333333" stroke-width="1" opacity="0.6"/>
-  
-  <circle cx="960" cy="300" r="200" fill="none" stroke="#404040" stroke-width="2" opacity="0.3"/>
-  <circle cx="960" cy="300" r="150" fill="none" stroke="#404040" stroke-width="2" opacity="0.5"/>
-  <circle cx="960" cy="300" r="100" fill="none" stroke="#505050" stroke-width="2" opacity="0.7"/>
-  
-  <text x="50%" y="45%" text-anchor="middle" fill="url(#textGradient)" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" letter-spacing="8">SELF-HOSTED</text>
-  <text x="50%" y="55%" text-anchor="middle" fill="url(#textGradient)" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" letter-spacing="12">VPN</text>
-</svg>
+
+  <!-- Внешний бирюзовый фон как у референса -->
+  <rect width="1600" height="900" fill="#169fb9"/>
+
+  <!-- Центральный лендинг-блок с тенью -->
+  <g transform="translate(70 75)" filter="url(#shadow)">
+    <rect width="1460" height="750" fill="#ffffff"/>
+
+    <!-- Левая тёмная панель -->
+    <rect width="500" height="750" fill="url(#sidebar)"/>
+
+    <!-- Правая часть -->
+    <g transform="translate(500 0)">
+      <rect width="960" height="750" fill="url(#sky)"/>
+
+      <!-- Стилизованный горный фон -->
+      <g clip-path="url(#rightSide)" transform="translate(-500 0)">
+        <!-- Облака -->
+        <path
+          d="M480 170
+             C620 115 700 165 790 130
+             C910 85 1025 140 1110 112
+             C1240 67 1370 130 1500 75
+             L1600 0 L480 0 Z"
+          fill="#f1f4f4"
+          opacity="0.76"
+        />
+        <path
+          d="M500 225
+             C630 176 720 232 835 184
+             C935 142 1060 224 1170 170
+             C1270 123 1390 181 1540 131
+             L1600 0 L500 0 Z"
+          fill="#dbe7ec"
+          opacity="0.58"
+        />
+
+        <!-- Дальний снежный хребет -->
+        <path
+          d="M500 380
+             L610 322 L665 343 L742 249 L806 318
+             L885 228 L950 309 L1040 193 L1105 294
+             L1186 222 L1242 296 L1325 202 L1402 286
+             L1490 230 L1600 304
+             L1600 512 L500 512 Z"
+          fill="#d9e6e9"
+          opacity="0.94"
+        />
+
+        <!-- Тени и снег на дальнем хребте -->
+        <path
+          d="M742 249 L806 318 L855 283 L885 228 L950 309
+             L1004 270 L1040 193 L1105 294 L1151 269
+             L1186 222 L1242 296 L1282 269 L1325 202
+             L1402 286 L1452 256 L1490 230 L1600 304
+             L1600 420 L500 420 L610 322 L665 343 Z"
+          fill="#7897aa"
+          opacity="0.55"
+        />
+
+        <!-- Передний горный массив -->
+        <path
+          d="M500 512
+             L584 424 L646 451 L728 360 L798 434
+             L866 347 L950 450 L1031 387 L1095 485
+             L1182 405 L1260 493 L1350 376 L1430 474
+             L1514 405 L1600 460
+             L1600 750 L500 750 Z"
+          fill="#173b59"
+        />
+
+        <!-- Тени передних гор -->
+        <path
+          d="M500 570
+             L584 424 L646 451 L686 419 L728 360
+             L798 434 L835 396 L866 347 L950 450
+             L995 421 L1031 387 L1095 485 L1140 456
+             L1182 405 L1260 493 L1303 443 L1350 376
+             L1430 474 L1470 439 L1514 405 L1600 460
+             L1600 750 L500 750 Z"
+          fill="#08243f"
+          opacity="0.72"
+        />
+
+        <!-- Сосновый лес -->
+        <path
+          d="M500 600
+             C585 562 660 594 746 554
+             C825 518 900 585 988 548
+             C1082 510 1155 580 1238 535
+             C1325 490 1420 553 1600 494
+             L1600 750 L500 750 Z"
+          fill="#071c32"
+          opacity="0.84"
+        />
+
+        <!-- Дымка -->
+        <rect x="500" y="0" width="1100" height="750" fill="url(#mist)"/>
+      </g>
+
+      <!-- Нижнее затемнение -->
