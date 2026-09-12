@@ -4,24 +4,13 @@
       <stop offset="0%" stop-color="#0b1f38"/>
       <stop offset="100%" stop-color="#061526"/>
     </linearGradient>
-
-    <linearGradient id="fadeToGitHub" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#0d1117" stop-opacity="0.02"/>
-      <stop offset="66%" stop-color="#0d1117" stop-opacity="0.32"/>
-      <stop offset="84%" stop-color="#0d1117" stop-opacity="0.78"/>
-      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
-    </linearGradient>
   </defs>
 
   <!-- Тёмно-синий фон -->
-  <rect width="1460" height="750" fill="#051020"/>
+  <rect width="1460" height="750" fill="#0a1f3d"/>
 
   <!-- Сайдбар -->
   <rect width="520" height="750" fill="url(#sidebarDark)"/>
-
-  <!-- Лёгкий fade поверх всего -->
-  <rect width="1460" height="750" fill="url(#fadeToGitHub)"/>
 
   <!-- Декоративная вертикальная линия -->
   <rect x="110" y="140" width="4" height="260" fill="#159fba" opacity="0.9"/>
@@ -73,3 +62,31 @@
 
   <!-- Текст, абзац 3 -->
   <text
+    x="140"
+    y="410"
+    fill="#9ca3af"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+  >Здесь я разворачиваю личный VPN-сервер с нуля:</text>
+
+  <text
+    x="140"
+    y="435"
+    fill="#9ca3af"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+  >выбор VPS, защита Linux, VLESS + Reality, управление клиентами.</text>
+
+  <!-- Плашка -->
+  <rect x="140" y="475" width="170" height="42" fill="#159fba"/>
+
+  <text
+    x="225"
+    y="502"
+    text-anchor="middle"
+    fill="#08213b"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    font-weight="700"
+  >README.RU.MD</text>
+</svg>
