@@ -1,3 +1,10 @@
+<div align="center">
+  <img
+    src="./resources/vpn-wave-header.svg"
+    width="100%"
+    alt="Self-Hosted VPN"
+  />
+</div>
 
 # 🌐 Собственный VPN-сервер: Мой путь в сети и кибербезопасность в 15 лет
 
