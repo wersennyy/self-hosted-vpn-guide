@@ -9,7 +9,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-0d1117?style=flat-square&labelColor=0d1117)](LICENSE)
 [![OS: Linux](https://img.shields.io/badge/OS-Linux-0d1117?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117)](https://www.linux.org/)
-[![Xray Core](https://img.shields.io/badge/Xray-Core-0d1117?style=flat-square&labelColor=0d1117)](https://github.com/XTLS/Xray-core)
 
 <br/>
 
