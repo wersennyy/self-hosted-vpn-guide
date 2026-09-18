@@ -11,8 +11,7 @@
 [![OS: Linux](https://img.shields.io/badge/OS-Linux-0d1117?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117)](https://www.linux.org/)
 [![Xray Core](https://img.shields.io/badge/Xray-Core-0d1117?style=flat-square&labelColor=0d1117)](https://github.com/XTLS/Xray-core)
 
-
-<br />
+<br/>
 
 <div align="center">
 
@@ -20,8 +19,7 @@
 [![Русский](https://img.shields.io/badge/README-Русский-159fba?style=for-the-badge&labelColor=0a2038)](README.ru.md)
 [![Гайды](https://img.shields.io/badge/OPEN-GUIDES-159fba?style=for-the-badge&labelColor=0a2038)](guide/)
 
-<br /><br />
-
+<br/><br/>
 
 </div>
 
