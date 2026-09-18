@@ -36,6 +36,54 @@
 
 ---
 
+
+
+
+
+
+
+<br />
+
+<div align="center">
+
+[![English](https://img.shields.io/badge/README-English-159fba?style=for-the-badge&labelColor=0a2038)](README.md)
+[![Русский](https://img.shields.io/badge/README-Русский-159fba?style=for-the-badge&labelColor=0a2038)](README.ru.md)
+[![Гайды](https://img.shields.io/badge/OPEN-GUIDES-159fba?style=for-the-badge&labelColor=0a2038)](guide/)
+
+<br /><br />
+
+[![About](https://img.shields.io/badge/01-О%20ПРОЕКТЕ-ffffff?style=flat-square&labelColor=0a2038)](#о-проекте)
+[![Stack](https://img.shields.io/badge/02-СТЕК-9ab4c3?style=flat-square&labelColor=0a2038)](#технологический-стек)
+[![Architecture](https://img.shields.io/badge/03-АРХИТЕКТУРА-9ab4c3?style=flat-square&labelColor=0a2038)](#архитектура-сети)
+[![Setup](https://img.shields.io/badge/04-УСТАНОВКА-9ab4c3?style=flat-square&labelColor=0a2038)](#пошаговая-установка-и-настройка)
+[![Clients](https://img.shields.io/badge/05-КЛИЕНТЫ-9ab4c3?style=flat-square&labelColor=0a2038)](#трудности-и-выбор-клиента)
+[![Result](https://img.shields.io/badge/06-ИТОГИ-9ab4c3?style=flat-square&labelColor=0a2038)](#заключение)
+
+</div>
+
+<br />
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div align="center">
 
 ## ОБО МНЕ / О ПРОЕКТЕ
@@ -221,4 +269,4 @@ sudo reboot
 Теперь у меня есть собственная надежная и высокоскоростная инфраструктура, которую я каждый день использую на всех своих личных устройствах.
 
 ---
-*Не стесняйтесь ставить ⭐ этому репозиторию, если этот гайд был вам полезен!*-->
+*Не стесняйтесь ставить ⭐ этому репозиторию, если этот гайд был вам полезен!*
