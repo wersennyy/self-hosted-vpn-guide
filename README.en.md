@@ -13,8 +13,8 @@
 
 <br />
 
-[![English](https://img.shields.io/badge/README-English-159fba?style=for-the-badge&labelColor=0a2038)](README.md)
-[![Русский](https://img.shields.io/badge/README-Русский-159fba?style=for-the-badge&labelColor=0a2038)](README.ru.md)
+[![English](https://img.shields.io/badge/README-English-159fba?style=for-the-badge&labelColor=0a2038)](README.en.md)
+[![Русский](https://img.shields.io/badge/README-Русский-159fba?style=for-the-badge&labelColor=0a2038)](README.md)
 [![Guides](https://img.shields.io/badge/OPEN-GUIDES-159fba?style=for-the-badge&labelColor=0a2038)](guide/)
 
 </div>
