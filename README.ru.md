@@ -23,12 +23,6 @@
 
 <br /><br />
 
-[![About](https://img.shields.io/badge/01-О%20ПРОЕКТЕ-ffffff?style=flat-square&labelColor=0a2038)](#о-проекте)
-[![Stack](https://img.shields.io/badge/02-СТЕК-9ab4c3?style=flat-square&labelColor=0a2038)](#технологический-стек)
-[![Architecture](https://img.shields.io/badge/03-АРХИТЕКТУРА-9ab4c3?style=flat-square&labelColor=0a2038)](#архитектура-сети)
-[![Setup](https://img.shields.io/badge/04-УСТАНОВКА-9ab4c3?style=flat-square&labelColor=0a2038)](#пошаговая-установка-и-настройка)
-[![Clients](https://img.shields.io/badge/05-КЛИЕНТЫ-9ab4c3?style=flat-square&labelColor=0a2038)](#трудности-и-выбор-клиента)
-[![Result](https://img.shields.io/badge/06-ИТОГИ-9ab4c3?style=flat-square&labelColor=0a2038)](#заключение)
 
 </div>
 
