@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/wersennyy/self-hosted-vpn-guide/bb18de14dd61cfcb675e6b2c31e7f64e7d509cd0/resources/vpn-wave-header.svg"
+  <img
+    src="https://raw.githubusercontent.com/wersennyy/self-hosted-vpn-guide/bb18de14dd61cfcb675e6b2c31e7f64e7d509cd0/resources/vpn-wave-header.svg"
     width="100%"
     alt="Self-Hosted VPN"
   />
@@ -10,22 +11,17 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-0d1117?style=flat-square&labelColor=0d1117)](LICENSE)
 [![OS: Linux](https://img.shields.io/badge/OS-Linux-0d1117?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117)](https://www.linux.org/)
 
-<br/>
-
-<div align="center">
+<br />
 
 [![English](https://img.shields.io/badge/README-English-159fba?style=for-the-badge&labelColor=0a2038)](README.md)
 [![Русский](https://img.shields.io/badge/README-Русский-159fba?style=for-the-badge&labelColor=0a2038)](README.ru.md)
 [![Гайды](https://img.shields.io/badge/OPEN-GUIDES-159fba?style=for-the-badge&labelColor=0a2038)](guide/)
-
-<br/><br/>
 
 </div>
 
 <br />
 
 ---
-
 
 <div align="center">
 
