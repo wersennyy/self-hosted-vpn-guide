@@ -6,121 +6,51 @@
   />
 </div>
 
+<div align="center">
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-0d1117?style=flat-square&labelColor=0d1117)](LICENSE)
+[![OS: Linux](https://img.shields.io/badge/OS-Linux-0d1117?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117)](https://www.linux.org/)
 
+<br />
 
-# 🌐 Self-Hosted VPN Server: My 15-Year-Old Journey into Networking & Security
+[![English](https://img.shields.io/badge/README-English-159fba?style=for-the-badge&labelColor=0a2038)](README.md)
+[![Русский](https://img.shields.io/badge/README-Русский-159fba?style=for-the-badge&labelColor=0a2038)](README.ru.md)
+[![Guides](https://img.shields.io/badge/OPEN-GUIDES-159fba?style=for-the-badge&labelColor=0a2038)](guide/)
 
-[![License: MIT](https://shields.io)](https://opensource.org)
-[![OS: Linux](https://shields.io)](https://linux.org)
+</div>
 
-🌐 [English](README.md) | [Русский](README.ru.md)
-
-Hello everyone! I’m a 15‑year‑old school student who is interested in computer networks, cybersecurity, and programming. Due to serious limitations and the lack of security in how the internet works, I decided to create this repository, in which I will provide a very detailed account of how to build your own VPN server from scratch.
-
-> [!NOTE]
-> ### 🗺️ Repository Navigation / Repository Guide
-> This project has been translated into two languages and divided into logical blocks for easy learning:
->
-> * 🌐 **[README.md](README.md)** — A brief description of the project, technology stack, and goals in English.
-> * 🇷🇺 **[README.ru.md](README.ru.md)** — The same main description, but in Russian.
-> * 📁 **[guide](guide/)** — Super clear guides on how to fully create your own VPN server.
-
-> [!CAUTION]
-> ### 🚨 IMPORTANT!!!
-> If you have any questions, suggestions, or encounter any errors, please be sure to message me privately. I’ll be happy to try to help you!!!
-
-## 🛠️ Tech Stack & Tools
-* **OS:** Ubuntu Server / Debian
-* **Protocol:** VLESS + Reality (via Xray Core)
-* **Security:** SSH Keys, Custom Ports, Automated network switching to bypass IP address blocking.
-* **Infrastructure:** Remote VPS (Virtual Private Server)
-* **Management:** 3x-ui Web Panel
-
-## 💡 Why Self-Hosted?
-* **Privacy:** Full control over my own data with a strict no-logs policy.
-* **Performance:** No speed throttling compared to free public VPN services.
-* **Education:** The best way to understand the OSI model, routing, and Linux administration is to build it yourself.
-
-## 📐 Network Architecture
-Here is how the network traffic flows and tricks network filters using Reality obfuscation:
-
-```mermaid
-graph TD
-    A[📱 Client: Phone or PC] -->|VLESS Encrypted Tunnel| B(Hostkey VPS)
-    B -->|Clean Traffic| C[Public Internet]
-    A -.->|What ISP Sees: Regular HTTPS| D[Legitimate Website]
-```
-
-### How it works under the hood:
-1. **Masking:** Instead of buying a TLS certificate, Reality "borrows" one from a major website. To your ISP, it looks like you are just visiting an official, unblocked platform.
-2. **Routing:** The Hostkey VPS intercepts the connection, decrypts the VLESS packet, and forwards your actual request to the destination website.
-3. **Privacy:** Your home IP address stays completely hidden from the internet, and your traffic remains immune to standard VPN blocking techniques.
-
-## 🚀 Step-by-Step Installation & Configuration
-
-Here is exactly how I deployed my server, secured it, and set up the next-generation VLESS+Reality protocol using the 3x-ui panel.
-
-### 🏠 Step 1: VPS Procurement & Initial Server Setup
-1. **Hosting Choice:** I ordered a Virtual Private Server (VPS) hosted by **Hostkey** for roughly 490 RUB/month.
-
-> [!NOTE]
-> **There is a very wide selection of hosting services (which may even be cheaper), for example:**
-
-> **1. https://xorek.cloud — a good alternative, slightly cheaper**
-
-> **2. https://play2go.cloud/ — also a good gaming server hosting service**
-
-> **3. https://my.u1host.com — a time‑tested hosting service**
-
-
-
-3. **First Security Step:** Immediately after the server was deployed, I changed the default root password to a strong, randomly generated one to prevent brute-force attacks.
-4. **System Update:** I connected to the server via SSH and updated the system packages to ensure all security patches were installed:
-   ```bash
-   sudo apt update && sudo apt upgrade -y && reboot
-   ```
-
-### 🛠️ Step 2: Installing and Configuring the 3x-ui Panel
-Instead of managing raw configuration files, I deployed **3x-ui**, a powerful web panel for managing Xray/VLESS proxies.
-
-1. **Installation:** I executed the 3x-ui installation script via the terminal.
-2. **Credential Management:** Upon successful installation, the script provided a local IP address, port, and default credentials. I securely saved this information.
-3. **Web Panel Access:** I accessed the dashboard via my browser and immediately updated the default admin username and password for security.
-
-### 🔒 Step 3: Setting Up the VLESS-Reality Inbound
-To bypass strict network DPI (Deep Packet Inspection) filters, I chose the modern **VLESS protocol with Reality obfuscation**.
-
-* **Port:** `51820`
-* **Protocol:** `VLESS`
-* **Transmission:** `TCP`
-* **Security:** `Reality`
-
-> [!NOTE]
-> **Why Reality?** Reality eliminates the need for purchasing TLS certificates. Instead, it "borrows" a certificate from a legitimate, unblocked website (like `google.com` or `microsoft.com`), making my VPN traffic look completely identical to standard HTTPS web browsing.
-
-### 👥 Step 4: Client Management & Access Control
-Inside the 3x-ui panel, I created client profiles. The panel automatically generated individual configuration links and QR codes. I configured the client settings with specific bandwidth permissions and successfully connected my personal phone and PC using the **v2rayN / Nekobox / Shadowrocket** client apps.
-
-## ⚠️ Challenges & Cross-Platform Client Selection
-
-During the deployment, I didn't experience any issues with the server-side setup or hosting procurement. However, the main challenge was finding the right cross-platform client software to connect my devices, especially for **Linux** and **iOS**, where reliable and secure options are extremely limited.
-
-### 🔍 The Client Selection Challenge
-* **The Problem:** Many popular Xray/VLESS clients are either platform-specific, lack a modern graphical interface, or have stability issues. For Linux, the selection of GUI clients is notoriously small and often requires complex terminal configurations. For iOS, many apps are filled with ads or fail to maintain a stable background connection.
-* **The Discovery & Solution:** After testing multiple applications, I discovered **Happ (Proxy Utility)**. It turned out to be the absolute ideal and safest choice for my entire ecosystem (Windows, Linux, and iPhone):
-  1. **Linux Integration:** Happ provides a seamless, secure GUI experience on Linux, which solved the "small choice" dilemma without breaking system routing tables.
-  2. **iOS Stability:** On the iPhone, it proved to be incredibly power-efficient, securely handling the VLESS+Reality protocol natively via the Xray core without unexpected drops.
-  3. **Flawless Configuration & QR Scanning:** The connection process was incredibly simple. I just generated the client profile inside the 3x-ui panel, scanned the QR code with the Happ app, and the entire complex VLESS+Reality configuration was imported instantly without any manual typing.
-  4. **Unified Ecosystem:** Using Happ across Windows, Linux, and iOS allowed me to maintain identical split-tunneling and routing rules on all my personal devices.
+<br />
 
 ---
 
-## 📈 Conclusion
+## About the project
 
-Building this project was an amazing practical experience. Instead of just reading theory, setting up this server from scratch helped me deeply understand how remote Linux servers operate, how internet routing works, and how next-generation encryption protocols protect our data. 
+I am 15 years old, and I study networking, Linux, and cybersecurity.
 
-Now I have my own reliable, high-speed infrastructure that I use every day across all my personal devices.
+This repository is my path toward building my own VPN server: VPS, Xray Core, `VLESS + Reality`, server security, and the real issues I had to solve along the way.
+
+Here, I also explore `DPI`, internet restrictions, and allowlists — and test which solutions work.
 
 ---
-*Feel free to star ⭐ this repository if you found this guide helpful!*
+
+## What's inside
+
+| Section | What you will find |
+|:--|:--|
+| [1.vps-setup](guide/) | Choosing a VPS, the first SSH login, and basic server preparation |
+| [2.Client-vpn](guide/) | Importing configurations, QR codes, and connecting devices |
+| [3.security](guide/) | Server security and protection against attacks |
+| [4.BC - bypass](guide/) | Bypassing restrictions and allowlists using different approaches |
+
+> [!TIP]
+> This README is a brief overview of the project. All commands, settings, and detailed explanations are available in the [guide/](guide/) folder.
+
+---
+
+<div align="center">
+
+### Thanks for stopping by
+
+*If this project or its guides were useful, I would really appreciate a ⭐.*
+
+</div>
