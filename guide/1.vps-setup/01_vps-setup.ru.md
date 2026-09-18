@@ -10,17 +10,14 @@
 
 <div align="center">
 
-[![Guide](https://img.shields.io/badge/GUIDE-01%20%2F%2004-159fba?style=flat-square&labelColor=0a2038)](../README.md)
-[![Section](https://img.shields.io/badge/SECTION-VPS%20SETUP-159fba?style=flat-square&labelColor=0a2038)](./)
-[![Language](https://img.shields.io/badge/LANGUAGE-РУССКИЙ-159fba?style=flat-square&labelColor=0a2038)](./)
+[![License: MIT](https://img.shields.io/badge/License-MIT-0d1117?style=flat-square&labelColor=0d1117)](../LICENSE)
+[![OS: Linux](https://img.shields.io/badge/OS-Linux-0d1117?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117)](https://www.linux.org/)
 
 <br />
 
-[![Главная](https://img.shields.io/badge/←-ГЛАВНАЯ-9ab4c3?style=flat-square&labelColor=0a2038)](../README.md)
-[![01 VPS](https://img.shields.io/badge/01-VPS%20SETUP-ffffff?style=flat-square&labelColor=0a2038)](./)
-[![02 Client](https://img.shields.io/badge/02-CLIENT%20VPN-9ab4c3?style=flat-square&labelColor=0a2038)](../2.Client-vpn/)
-[![03 Security](https://img.shields.io/badge/03-SECURITY-9ab4c3?style=flat-square&labelColor=0a2038)](../3.security/)
-[![04 Bypass](https://img.shields.io/badge/04-BC%20%2F%20BYPASS-9ab4c3?style=flat-square&labelColor=0a2038)](../4.BC%20-%20bypass/)
+[![English](https://img.shields.io/badge/README-English-159fba?style=for-the-badge&labelColor=0a2038)](../README.en.md)
+[![Русский](https://img.shields.io/badge/README-Русский-159fba?style=for-the-badge&labelColor=0a2038)](README.md)
+[![Гайды](https://img.shields.io/badge/OPEN-GUIDES-159fba?style=for-the-badge&labelColor=0a2038)](./)
 
 </div>
 
@@ -28,6 +25,14 @@
 
 ---
 
+<div align="center">
+
+> **GUIDE 01 / 04**  
+> *VPS · Первичная настройка · Базовая защита*
+
+</div>
+
+---
 
 
 
