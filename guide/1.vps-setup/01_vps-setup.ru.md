@@ -805,7 +805,7 @@ ping panel.myvpn.net
 
 На этом настройка домена и HTTPS для панели завершена.
 
-Дальше мы создадим первый inbound (VLESS + Reality), добавим пользователя и получим ссылку-подписку. А подключать устройства (телефон, компьютер) мы будем уже в отдельном гайде — **[Client VPN](2.Client-vpn/02_Client-vpn.ru.md)**.
+Дальше мы создадим первый inbound (VLESS + Reality), добавим пользователя и получим ссылку-подписку. А подключать устройства (телефон, компьютер) мы будем уже в отдельном гайде — **[Client VPN](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/2.Client-vpn/02_Client-vpn.ru.md)**.
 
 
 
