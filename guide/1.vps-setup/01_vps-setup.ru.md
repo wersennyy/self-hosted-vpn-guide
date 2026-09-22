@@ -323,7 +323,190 @@ apt install -y curl wget git
 На этом базовая подготовка сервера закончена. Дальше переходим к установке Marzban.
 
 
+### 3.2. Установка Marzban
 
+Теперь, когда сервер подготовлен, переходим к установке панели Marzban. Я буду показывать установку через Docker — это официальный и самый удобный способ.
+
+#### Что такое Docker (очень кратко)
+
+Если совсем просто: Docker — это инструмент, который позволяет запускать программы в изолированных контейнерах.
+
+- Каждый контейнер — это как «отдельная система» со своими файлами и настройками.
+- Вам не нужно вручную ставить зависимости, библиотеки и прочее — всё уже внутри образа.
+- Для Marzban это значит: вы ставите Docker один раз, а дальше панель работает в контейнере, который легко обновлять и бэкапить.
+
+Вам не нужно глубоко разбираться в Docker, чтобы использовать Marzban. Достаточно выполнять команды, которые я покажу.
+
+
+
+#### Установка Docker и Docker Compose
+
+Сначала установим Docker и Docker Compose, которые нужны для работы Marzban.
+
+1. Обновите список пакетов и установите необходимые утилиты:
+
+   ```bash
+   apt update
+   apt install -y curl gnupg
+   ```
+
+2. Добавьте GPG-ключ Docker:
+
+   ```bash
+   install -m 0755 -d /etc/apt/keyrings
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   chmod a+r /etc/apt/keyrings/docker.gpg
+   ```
+
+3. Добавьте репозиторий Docker:
+
+   ```bash
+   echo \
+     "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+     $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+     tee /etc/apt/sources.list.d/docker.list > /dev/null
+   ```
+
+4. Обновите список пакетов и установите Docker:
+
+   ```bash
+   apt update
+   apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   ```
+
+5. Проверьте, что Docker и Compose установились:
+
+   ```bash
+   docker --version
+   docker compose version
+   ```
+
+   Вы должны увидеть что-то вроде:
+
+   ```text
+   Docker version 27.x.x, build ...
+   Docker Compose version v2.x.x
+   ```
+
+На этом Docker установлен и готов к работе.
+
+#### Создание папки для Marzban
+
+Я рекомендую хранить конфигурацию Marzban в отдельной папке. Так проще делать бэкапы и не терять настройки.
+
+1. Создайте папку, например `/opt/marzban`:
+
+   ```bash
+   mkdir -p /opt/marzban
+   cd /opt/marzban
+   ```
+
+2. Внутри этой папки мы создадим файлы `docker-compose.yml` и `.env`.
+
+#### Создание файла `docker-compose.yml`
+
+Создайте файл `docker-compose.yml` в папке `/opt/marzban`:
+
+```bash
+nano docker-compose.yml
+```
+
+Вставьте следующее содержимое:
+
+```yaml
+services:
+  marzban:
+    image: gozargah/marzban:latest
+    restart: always
+    env_file: .env
+    network_mode: host
+    volumes:
+      - /var/lib/marzban:/var/lib/marzban
+```
+
+Сохраните файл (`Ctrl+O`, затем `Enter`) и выйдите (`Ctrl+X`).
+
+> [!NOTE]
+> Это минимальная конфигурация для старта. Позже, при настройке домена и HTTPS, мы её дополним.
+
+#### Создание файла `.env`
+
+В этой же папке создайте файл `.env`:
+
+```bash
+nano .env
+```
+
+Сначала сгенерируем случайный секрет для Marzban:
+
+```bash
+openssl rand -hex 32
+```
+
+Скопируйте вывод команды (длинная строка из букв и цифр).
+
+Теперь вставьте его в файл `.env`:
+
+```text
+MARZBAN_JWT_SECRET=вставьте_сюда_строку_от_openssl
+```
+
+Пример:
+
+```text
+MARZBAN_JWT_SECRET=a3f1b8c9d2e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0
+```
+
+Сохраните файл и выйдите.
+
+#### Запуск Marzban
+
+Теперь запустим панель.
+
+1. Находясь в папке `/opt/marzban`, выполните:
+
+   ```bash
+   docker compose up -d
+   ```
+
+2. Проверьте, что контейнер запустился:
+
+   ```bash
+   docker compose ps
+   ```
+
+   Вы должны увидеть контейнер `marzban` со статусом `Up`.
+
+3. Откройте в браузере адрес:
+
+   ```text
+   http://IP_АДРЕС_СЕРВЕРА:8000
+   ```
+
+   Например:
+
+   ```text
+   http://45.76.123.45:8000
+   ```
+
+Вы должны увидеть страницу входа в панель Marzban.
+
+#### Первый вход в панель
+
+При первом запуске нужно создать администратора.
+
+1. Откройте панель по адресу `http://IP_АДРЕС_СЕРВЕРА:8000`.
+2. Введите:
+   - желаемый логин администратора;
+   - пароль (запомните или сохраните в надёжном месте).
+3. Нажмите «Create Admin» или аналогичную кнопку.
+
+После этого вы войдёте в панель и сможете создавать пользователей и настраивать inbound'ы.
+
+> [!NOTE]
+> Пока панель работает по HTTP и доступна по IP. На следующем этапе мы настроим домен, HTTPS и более безопасный доступ.
+
+На этом базовая установка Marzban завершена. Дальше переходим к настройке домена и HTTPS.
 
 
 
