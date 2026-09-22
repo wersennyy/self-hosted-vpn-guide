@@ -317,7 +317,7 @@ apt install -y curl wget git
 
 > [!NOTE]
 > Более подробные рекомендации по защите сервера (настройка SSH-ключей, фаервол, fail2ban и т.д.) я описал в отдельном гайде:  
-> **[Безопасность VPS и VPN](3.security/03_security-vpn.ru.md)**.  
+> **[3.security](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/3.security/03_security-vpn.ru.md)**.  
 > Если вы планируете использовать сервер не только для VPN, настоятельно советую его прочитать.
 
 На этом базовая подготовка сервера закончена. Дальше переходим к установке Marzban.
