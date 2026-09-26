@@ -27,7 +27,7 @@
 
 <div align="center">
 
-> **GUIDE 02 / 04**  
+> **GUIDE 02 / 05**  
 > *Inbounds · Пользователи · Клиенты · Диагностика*
 
 </div>
