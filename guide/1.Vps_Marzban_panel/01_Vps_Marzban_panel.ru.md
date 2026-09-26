@@ -27,7 +27,7 @@
 
 <div align="center">
 
-> **GUIDE 01 / 04**  
+> **GUIDE 01 / 05**  
 > *VPS · Первичная настройка · Базовая защита · Marzban*
 
 </div>
@@ -779,7 +779,7 @@ ping panel.myvpn.net
 
 Сейчас панель доступна всем, кто знает адрес. Я рекомендую хотя бы базово ограничить доступ.
 
-Самый простой способ — разрешить доступ к порту 443 (HTTPS) только с ваших IP через фаервол. Это уже часть общей защиты сервера, подробнее я описывал это в разделе **[3.security](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/3.security/03_security-vpn.ru.md)**.
+Самый простой способ — разрешить доступ к порту 443 (HTTPS) только с ваших IP через фаервол. Это уже часть общей защиты сервера, подробнее я описывал это в разделе **[2.Inbound_client](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/2.Inbound_client/01_Inbound_client.ru.md)**.
 
 Минимально можно сделать так (если вы используете UFW):
 
@@ -806,4 +806,4 @@ ping panel.myvpn.net
 На этом настройка домена и HTTPS для панели завершена.
 > [!NOTE]
 > Дальше мы создадим первый inbound (VLESS + Reality), добавим пользователя и получим ссылку-подписку. А подключать
-> устройства (телефон, компьютер) мы будем уже в отдельном гайде — **[Client VPN](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/2.Client-vpn/02_Client-vpn.ru.md)**.
+> устройства (телефон, компьютер) мы будем уже в отдельном гайде — **[2.Inbound_client](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/2.Inbound_client/01_Inbound_client.ru.md)**.
