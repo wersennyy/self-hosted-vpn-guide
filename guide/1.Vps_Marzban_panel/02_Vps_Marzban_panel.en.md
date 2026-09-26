@@ -229,7 +229,7 @@ If all this is ready, you can proceed to server preparation and Marzban panel in
 
 Before setting up the panel, I strongly recommend reading and applying recommendations from a separate guide on server protection:
 
-- **[2.Inbound_client](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/2.Inbound_client/01_Inbound_client.ru.md)** — SSH setup, firewall, basic server protection.
+- **[3.security](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/3.security/03_security-vpn.ru.md)** — SSH setup, firewall, basic server protection.
 
 I intentionally moved security questions to a separate file to focus here on Marzban installation and setup. I'll briefly describe minimal server preparation (SSH connection, updates, utilities installation), but detailed protection recommendations are better viewed in the separate guide above.
 
@@ -317,7 +317,7 @@ These packages will be useful for:
 
 > [!NOTE]
 > More detailed recommendations on server protection (SSH keys setup, firewall, fail2ban, etc.) are described in a separate guide:  
-> **[2.Inbound_client](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/2.Inbound_client/01_Inbound_client.ru.md)**.  
+> **[3.security](https://github.com/wersennyy/self-hosted-vpn-guide/blob/main/guide/3.security/03_security-vpn.ru.md)**.  
 > If you plan to use the server not only for VPN, I strongly advise reading it.
 
 Basic server preparation is now complete. Next, we proceed to Marzban installation.
